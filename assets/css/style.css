@@ -271,13 +271,11 @@ form label {
 
 .postMeta {
   color: rgba(44, 62, 80, 0.5);
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
   font-style: italic;
   font-weight: normal;
   margin: 0 0 .75rem;
-}
-
-.postMeta a {
-  font-weight: bold;
 }
 
 .postFooter .authorImage img {
@@ -495,7 +493,8 @@ Media Queries
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: 11.13%;
+    /*width: 11.13%; */
+    width: 16.943%
   }
 
   nav a:visited {
