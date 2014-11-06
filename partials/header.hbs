@@ -1,13 +1,14 @@
-<header class="logoHeader wrapper clearfix">
+<header class="logoHeader fixed wrapper clearfix">
   <nav>
-    <ul>
+    <ul id="menuContainer">
       <li><a href="http://craves.io" title="Home">Home</a></li>
       <li><a href="http://blog.craves.io">Blog</a></li>
-      <li><a href="http://craves.io" title="Home"><div class="logo" href="{{@blog.url}}"></div></a></li>
+      <li class="logo"><a href="http://craves.io" title="Home"><div class="logo" href="{{@blog.url}}"></div></a></li>
       <li><a href="http://twitter.com/cravesapp" title="Follow us on Twitter">Twitter</a></li>
       <li><a href="https://facebook.com/cravesapp" title="Like us on Facebook">Facebook</a></li>
       {{!-- <li><a href="#">Press</a></li>
       <li><a href="#">Contact</a></li> --}}
     </ul>
+    <a id="menuBtn" href="#" class="icon menu">Menu</a>
   </nav>
 </header>

@@ -19,11 +19,13 @@
     </section>
 
     {{#if tags}}
-{{!--     <hr>
+    {{!--
+    <hr>
     <div class="postTags">
       Tags: {{tags separator=" | "}}
     </div>
-    <hr> --}}
+    <hr>
+    --}}
     {{/if}}
 
     {{#if author}}
@@ -73,11 +75,11 @@
   </article>
 {{/post}}
 
-  {{#if pagination}}
+{{#if pagination}}
   <div class="pagination">
     {{{pagination}}}
   </div>
-  {{/if}}
+{{/if}}
 
 </main>
 
