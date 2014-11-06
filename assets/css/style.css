@@ -530,7 +530,8 @@ Media Queries
 
 @media only screen and (min-width: 1024px) {
 
-  .wrapper {
+  .wrapper,
+  .logoHeader.fixed {
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
@@ -588,6 +589,8 @@ Media Queries
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
+
+
 
   h4 {
     font-size: 1.5em;
