@@ -432,6 +432,12 @@ header + .betaSignUp {
   left: 0;
 }
 
+.home-template .postFooter,
+.post-template .postFooter,
+.author-template .postFooter {
+  margin-bottom: 0;
+}
+
 footer .logoLink {
   width: 150px;
   display: block;
