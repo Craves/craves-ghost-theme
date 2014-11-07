@@ -185,6 +185,16 @@ ul.unstyled {
   padding: 0;
 }
 
+input {
+  border: none;
+  border-radius: 2px 0 0 2px;
+  color: #2C3E50;
+  font-size: 0.9em;
+  font-weight: bold;
+  height: 50px;
+  padding: 0 0 0 10px;
+}
+
 hr {
   background-color: rgba(44, 62, 80, 0.2);
   margin: 3.2em auto;
@@ -321,6 +331,7 @@ header + .betaSignUp {
 
 .betaSignUp {
   background-color: #2C3E50;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 5rem 0;
   padding: 1.5rem 0 5rem;
   height: auto;
@@ -336,11 +347,7 @@ header + .betaSignUp {
 }
 
 .betaSignUp input {
-  border: none;
-  border-radius: 2px 0 0 2px;
-  color: #2C3E50;
   float: left;
-  height: 50px;
   width: 100%;
 }
 
@@ -349,7 +356,6 @@ header + .betaSignUp {
   border: none;
   border-radius: 0 2px 2px 0;
   color: #fff;
-  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   height: 50px;
   width: 100%;
