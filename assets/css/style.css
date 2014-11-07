@@ -61,6 +61,10 @@ video {
     vertical-align: middle;
 }
 
+img {
+  max-width: 100%;
+}
+
 address {
   font-style: normal;
 }
@@ -95,8 +99,7 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 */
 
 body {
-  font: 22px/33px "freight-text-pro", Georgia, Times, "Times New Roman", serif;
-
+  font: 2.4rem/3.6rem "freight-text-pro", Georgia, Times, "Times New Roman", serif;
 }
 
 a {
@@ -106,93 +109,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-
-/*
-==============
-MOBILE: Menu
-==============
-*/
-
-.logoHeader {
-  height: 10rem;
-  min-width: 50px;
-  width: 10rem;
-}
-
-.logoHeader .menu.icon {
-  background-color: #56D9CD;
-  border-radius: 8rem;
-  bottom: 0rem;
-  color: #fff;
-  display: block;
-  height: 8rem;
-  left: 1rem;
-  position: relative;
-  text-decoration: none;
-  width: 8rem;
-  z-index: 3;
-}
-
-.logoHeader ul {
-  display: none;
-}
-.logoHeader ul.in-view {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  height: 362px;
-  z-index: 1;
-  background-color: #fff;
-  width: 100%;
-  border-top: 1px solid #56D9CD;
-}
-
-.logoHeader li.logo {
-  display: none;
-}
-
-nav a {
-  color: #BFC5CA;
-  display: block;
-  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-  padding: 25px 0;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-nav .logo {
-  height: 40px;
-  margin: -12px auto 0;
-  background: url(../images/logo-no-text.png) 50% 50% no-repeat;
-  -webkit-background-size: contain;
-  background-size: contain;
-  display: block;
-  width: 36px;
-}
-
-nav a:hover,
-nav a:visited {
-  color: #2C3E50;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/*
-==============
-MOBILE: Main
-==============
-*/
-
-body {
-  font-size: 2.4rem;
 }
 
 h1, h2, h3,
@@ -288,38 +204,173 @@ form label {
   display: none;
 }
 
+
+/*
+==============
+MOBILE: Menu
+==============
+*/
+
+.logoHeader {
+  bottom: 0;
+  height: 10rem;
+  min-width: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+.logoHeader .menu.icon {
+  background-color: #56D9CD;
+  border-radius: 8rem;
+  bottom: 0rem;
+  color: #fff;
+  display: block;
+  font-size: 1.6rem;
+  height: 6rem;
+  left: 1rem;
+  line-height: 1.8;
+  position: relative;
+  text-decoration: none;
+  width: 6rem;
+  z-index: 3;
+}
+
+.logoHeader ul {
+  display: none;
+}
+.logoHeader ul.in-view {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 281px;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #56D9CD;
+}
+
+.logoHeader li.logo {
+  display: none;
+}
+
+nav a {
+  color: #BFC5CA;
+  display: block;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  padding: 17px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  height: 40px;
+  margin: 0 auto;
+  background: url(../images/logo-no-text.png) 50% 50% no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: block;
+  width: 36px;
+}
+
+nav a:hover,
+nav a:visited,
+nav a.active {
+  color: #2C3E50;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/*
+==============
+MOBILE: Main
+==============
+*/
+
+.hero {
+  height: auto;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.blogTitle {
+  font-size: 3.6rem;
+  margin: 2rem 0;
+}
+
+.blogDescription {
+  color: rgba(44,62,80,0.5);
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+  margin:0 auto;
+}
+
+hr {
+  margin: 2em auto;
+}
+
+/* Post page sign up form */
+header + .betaSignUp {
+  display: none;
+}
+
+.betaSignUp {
+  background-color: #2C3E50;
+  margin: 5rem 0;
+  padding: 1.5rem 0 5rem;
+  height: auto;
+}
+
+.betaSignUp p {
+  color: white;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0 0 2rem;
+  text-align:center;
+}
+
+.betaSignUp input {
+  border: none;
+  border-radius: 2px 0 0 2px;
+  color: #2C3E50;
+  float: left;
+  height: 50px;
+  width: 100%;
+}
+
+.betaSignUp button {
+  background-color: #56D9CD;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  color: #fff;
+  font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  height: 50px;
+  width: 100%;
+}
+
 .footerContainer footer {
   color: white;
   padding: 20px 0;
 }
 
-
-/*
-===============
-ALL: IE Fixes
-===============
-*/
-
-.ie7 .post-header {
-  padding-top: 20px;
-}
-
-/*
-==========================================================================
-Author's custom styles
-==========================================================================
-*/
 /* Blog */
-
 .post-template .postHeader {
   text-align: center;
 }
 
 .post {
-  margin: 2rem;
+  margin: 2rem 2rem 6rem;
 }
 
 .postTitle {
+  font-size: 4.4rem;
   margin: 0 0 0.375rem;
 }
 
@@ -339,7 +390,6 @@ Author's custom styles
 }
 
 .sharePost {
-  padding-bottom: 5rem;
   text-align: center;
 }
 .sharePost h4 {
@@ -391,26 +441,37 @@ footer .logoLink {
 .home-template footer,
 .post-template footer,
 .author-template footer {
+  font-size: 2rem;
+  margin-bottom: 8em;
+  margin-top: 3em;
   text-align:center;
-  margin-bottom: 5em;
 }
 
 .home-template footer .logo,
 .post-template footer .logo,
 .author-template footer .logo {
-  height: 155px;
+  height: 120px;
   margin: 0 auto 0.5em;
   background: url(../images/logo.png) 50% 50% no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   display: block;
-  width: 150px;
 }
 
 .home-template footer p,
 .post-template footer p,
 .author-template footer p {
   margin: 0;
+}
+
+/*
+===============
+ALL: IE Fixes
+===============
+*/
+
+.ie7 .post-header {
+  padding-top: 20px;
 }
 
 /*
@@ -426,8 +487,15 @@ Media Queries
    ==================== */
 
   .logoHeader {
-    height: 70px;
+    height: auto;
+    min-width: auto;
+    position: relative;
+    top: 0;
     width: 100%;
+  }
+
+  header nav {
+    height: 70px;
   }
 
   .logoHeader .menu.icon {
@@ -453,6 +521,10 @@ Media Queries
   nav a {
     display: inline-block;
     width: 24.2%;
+  }
+
+  .post {
+    margin: 2rem 5rem 6rem;
   }
 
   /* ========================
@@ -481,19 +553,35 @@ Media Queries
 /* iPhone 6 Landscape */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 
+  .hero {
+    margin: 0 6rem;
+  }
+
+  .blogTitle {
+    font-size: 4.2rem;
+  }
+
+  .blogDescription {
+    font-size: 3.1rem;
+
+  }
+
 }
 
 /* iPhone 6+ Portrait */
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3){
-  /*
-  .logoHeader {
-    display: none;
-  }*/
-
 }
 
 /* iPhone 6+ Landscape */
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) {
+
+  .hero {
+    margin: 0 7rem;
+  }
+
+  .post {
+    margin: 2rem 10rem;
+  }
 
 }
 
@@ -507,17 +595,71 @@ Media Queries
   /* ============
     WIDE: Menu
    ============ */
-
+  .logoHeader {
+    height: auto;
+    min-width: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
 
   /* ============
     WIDE: Main
    ============ */
 
-  /* Blog */
+  /* Post page sign up form */
+  header + .betaSignUp {
+    display:block;
+    margin: 0 0 5rem;
+  }
+
+  hr {
+   margin: 2em auto;
+  }
+
+  .hero {
+    margin: 0 10%;
+    padding: 1rem 0 0;
+  }
+
+  .betaSignUp {
+    background-color: #2C3E50;
+    margin: 5rem 0 10rem;
+    padding: 15px 0 0;
+    height: 120px;
+  }
+
+  .betaSignUp p {
+    margin-bottom: 0.5rem;
+  }
+
+  .betaSignUp .formGroup {
+    margin: auto;
+    width: 720px;
+  }
+
+  .betaSignUp input {
+    border: none;
+    border-radius: 2px 0 0 2px;
+    color: #2C3E50;
+    float: left;
+    height: 50px;
+    width: 500px;
+  }
+
+  .betaSignUp button {
+    background-color: #56D9CD;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    width: 220px;
+  }
 
   .post {
-    border-bottom: #EBF2F6 1px solid;
-    margin: 5rem auto 4rem;
+    margin: 0 auto;
     max-width: 720px;
     padding-bottom: 4rem;
     position: relative;
@@ -526,22 +668,37 @@ Media Queries
     hyphens: auto;
   }
 
+  .postTitle {
+    font-size: 6rem;
+  }
+
+  .home-template footer,
+  .post-template footer,
+  .author-template footer {
+    font-size: 2.4rem;
+  }
+
+  .home-template footer .logo,
+  .post-template footer .logo,
+  .author-template footer .logo {
+    height: 155px;
+    width: 150px;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
 
+  /* Nav */
   .wrapper,
-  .logoHeader.fixed {
+  .logoHeader nav {
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
 
   .logoHeader {
     display: block;
-  }
-
-  .logoHeader ul {
-    margin: 22px 0;
+    height: auto;
   }
 
   .logoHeader li.logo {
@@ -559,7 +716,7 @@ Media Queries
     float: left;
     font-size: 0.8em;
     font-weight: bold;
-    padding: 15px 0;
+    padding: 18px 0;
     margin: 0 1.7%;
     text-align: center;
     text-decoration: none;
@@ -568,13 +725,30 @@ Media Queries
     width: 16.941%
   }
 
-  nav a:visited {
-    color: #BFC5CA;
+  nav .logo a {
+    padding: 14px 0;
   }
 
   nav a:hover {
     color: #2C3E50;
     text-decoration: none;
+  }
+
+  /* Hero */
+  .hero {
+    margin: 0 14%;
+  }
+
+  .blogTitle {
+    margin: 2rem 0;
+  }
+  .blogDescription {
+    font-size: 3.4rem;
+    line-height: 4rem;
+  }
+
+  hr {
+   margin: 3em auto;
   }
 
 }
@@ -590,7 +764,10 @@ Media Queries
     margin: 0 auto;
   }
 
-
+  /* Hero */
+  .hero {
+    margin: 0 20%;
+  }
 
   h4 {
     font-size: 1.5em;
@@ -602,7 +779,6 @@ Media Queries
     line-height: 1.4;
     margin: 1.5em -160px;
   }
-
 }
 
 /* ==========================================================================
