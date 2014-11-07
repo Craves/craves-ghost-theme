@@ -286,7 +286,6 @@ nav .logo {
 }
 
 nav a:hover,
-nav a:visited,
 nav a.active {
   color: #2C3E50;
 }
@@ -307,18 +306,21 @@ MOBILE: Main
   text-align: center;
 }
 
-.blogTitle {
+.blogTitle,
+.authorName {
   font-size: 3.6rem;
   margin: 2rem 0;
 }
 
-.blogDescription {
+.blogDescription,
+.authorBio {
   color: rgba(44,62,80,0.5);
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 3.6rem;
   margin:0 auto;
 }
+
 
 hr {
   margin: 2em auto;
@@ -474,6 +476,38 @@ footer .logoLink {
 .post-template footer p,
 .author-template footer p {
   margin: 0;
+}
+
+/* Author template */
+
+.author-template .hero {
+  margin: 0 auto;
+  width: 720px;
+}
+
+.authorImage {
+  float: left;
+  margin: 3rem 30px;
+}
+
+.authorImage .img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  line-height: 0;
+  border-radius: 100px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  background-size: 100px;
+}
+
+.authorName {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.authorBio,
+.authorMeta {
+  text-align: left;
 }
 
 /*

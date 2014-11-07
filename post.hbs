@@ -11,7 +11,7 @@
     <header class="postHeader">
       <h1 class="postTitle" itemprop="headline">{{title}}</h1>
       <p class="postMeta">
-        by {{author}} on <time class="postDate" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+        by {{#author}}<a href="{{website}}">{{name}}</a>{{/author}} on <time class="postDate" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
         {{!tags prefix=" on "}}
       </p>
     </header>
