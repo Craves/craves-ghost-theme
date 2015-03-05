@@ -99,7 +99,7 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 */
 
 body {
-  font: 2.4rem/3.6rem "freight-text-pro", Georgia, Times, "Times New Roman", serif;
+  font: 2.2rem/3.6rem "freight-text-pro", Georgia, Times, "Times New Roman", serif;
 }
 
 a {
@@ -721,7 +721,7 @@ Media Queries
   .home-template footer,
   .post-template footer,
   .author-template footer {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .home-template footer .logo,
