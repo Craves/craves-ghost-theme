@@ -118,21 +118,21 @@ h4, h5, h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5.6rem;
   line-height: 1.2em;
   letter-spacing: -2px;
   text-indent: -3px;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 4.4rem;
   letter-spacing: -0.01rem;
   line-height: 1.1;
   /*margin-bottom: 6px;*/
 }
 
 h3 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   letter-spacing: -0.01rem;
   line-height: 1.1;
   /*margin-bottom: 6px;*/
@@ -147,7 +147,7 @@ h3.section-heading {
 }
 
 h4 {
-  font-size: 3.1rem
+  font-size: 3rem
 }
 h4.sub-heading {
   color: rgba(44,62,80,0.5);
@@ -158,7 +158,7 @@ h4.sub-heading {
 }
 
 h5 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 h6 {
@@ -308,7 +308,7 @@ MOBILE: Main
 
 .blogTitle,
 .authorName {
-  font-size: 3.6rem;
+  font-size: 5.6rem;
   margin: 2rem 0;
 }
 
@@ -715,8 +715,17 @@ Media Queries
   }
 
   .postTitle {
-    font-size: 6rem;
+    font-size: 4.4rem;
   }
+
+  .post-template .postTitle {
+    font-size: 5.6rem;
+  }
+  .post-template h2 { font-size: 3.6rem; }
+  .post-template h3 { font-size: 3.0rem; }
+  .post-template h4 { font-size: 2.4rem; }
+  .post-template h5 { font-size: 2.2rem; }
+  .post-template h6 { font-size: 1.8rem; }
 
   .home-template footer,
   .post-template footer,
