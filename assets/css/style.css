@@ -321,7 +321,6 @@ MOBILE: Main
   margin:0 auto;
 }
 
-
 hr {
   margin: 2em auto;
 }
@@ -370,19 +369,22 @@ header + .betaSignUp {
 
 /* Blog */
 .post {
-  margin: 2rem 2rem 6rem;
+  margin: 0 0 6rem;
 }
 
 .post header {
-  margin: 0 auto;
+  margin: 0 2rem;
   max-width: 720px;
 }
 
+.post-template header {
+  margin: 0 auto;
+}
 .post-template .postHeader {
   background: #F4F5F6;
   margin-bottom: 4rem;
   max-width: 100%;
-  padding: 3rem 0 2rem;
+  padding: 3rem 2rem 2rem;
   text-align: center;
 }
 
@@ -393,7 +395,7 @@ header + .betaSignUp {
 }
 
 .post section {
-  margin: 0 auto;
+  margin: 0 2rem;
   max-width: 720px;
 }
 
@@ -594,7 +596,7 @@ Media Queries
   }
 
   .post {
-    margin: 2rem 5rem 6rem;
+    margin: 0 0 6rem;
   }
 
   /* ========================
@@ -617,12 +619,15 @@ Media Queries
   /*  .logoHeader {
     display: none;
   }*/
+  .post section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
 }
 
 /* iPhone 6 Landscape */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-
   .hero {
     margin: 0 6rem;
   }
@@ -636,10 +641,19 @@ Media Queries
 
   }
 
+  .post section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
 }
 
 /* iPhone 6+ Portrait */
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3){
+  .post section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 /* iPhone 6+ Landscape */
@@ -649,8 +663,9 @@ Media Queries
     margin: 0 7rem;
   }
 
-  .post {
-    margin: 2rem 10rem;
+  .post section {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 
 }
@@ -730,12 +745,14 @@ Media Queries
 
   .post {
     margin: 0 auto;
-    /*max-width: 720px;*/
     padding-bottom: 4rem;
     position: relative;
-    /*width: 80%;*/
     word-break: break-word;
     hyphens: auto;
+  }
+
+  .post header {
+    margin: 0 auto;
   }
 
   .postTitle {
@@ -750,6 +767,11 @@ Media Queries
   .post-template h4 { font-size: 2.4rem; }
   .post-template h5 { font-size: 2.2rem; }
   .post-template h6 { font-size: 1.8rem; }
+
+  .post section {
+    margin:0 auto;
+    max-width: 720px;
+  }
 
   footer,
   .post-template footer,
