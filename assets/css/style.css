@@ -221,7 +221,7 @@ MOBILE: Menu
 ==============
 */
 
-.logoHeader {
+body > header {
   bottom: 0;
   height: 10rem;
   min-width: 50px;
@@ -229,7 +229,7 @@ MOBILE: Menu
   width: 100%;
 }
 
-.logoHeader .menu.icon {
+body > header .menu.icon {
   background-color: #56D9CD;
   border-radius: 8rem;
   bottom: 0rem;
@@ -245,10 +245,10 @@ MOBILE: Menu
   z-index: 3;
 }
 
-.logoHeader ul {
+body > header ul {
   display: none;
 }
-.logoHeader ul.in-view {
+body > header ul.in-view {
   display: block;
   position: absolute;
   bottom: 0;
@@ -259,7 +259,7 @@ MOBILE: Menu
   border-top: 1px solid #56D9CD;
 }
 
-.logoHeader li.logo {
+body > header li.logo {
   display: none;
 }
 
@@ -558,7 +558,7 @@ Media Queries
     INTERMEDIATE: Menu
    ==================== */
 
-  .logoHeader {
+ body > header {
     height: auto;
     min-width: auto;
     position: relative;
@@ -570,21 +570,21 @@ Media Queries
     height: 70px;
   }
 
-  .logoHeader .menu.icon {
+  body > header .menu.icon {
     display: none;
   }
 
-  .logoHeader ul {
+  body > header ul {
     display: block;
     margin: 0;
     padding-left: 0;
   }
 
-  .logoHeader li.logo {
+  body > header li.logo {
     display: none;
   }
 
-  .logoHeader.fixed {
+  body > header.fixed {
     height: 85px;
     position: relative;
     top: 0;
@@ -616,7 +616,7 @@ Media Queries
 /* iPhone 6 Portrait */
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2){
 
-  /*  .logoHeader {
+  /*  body > header {
     display: none;
   }*/
   .post section {
@@ -680,7 +680,7 @@ Media Queries
   /* ============
     WIDE: Menu
    ============ */
-  .logoHeader {
+  body > header {
     height: auto;
     min-width: auto;
     position: relative;
@@ -792,17 +792,17 @@ Media Queries
 
   /* Nav */
   .wrapper,
-  .logoHeader nav {
+  body > header nav {
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
   }
 
-  .logoHeader {
+  body > header {
     display: block;
     height: auto;
   }
 
-  .logoHeader li.logo {
+  body > header li.logo {
     background-image: none;
     display: inline;
   }
@@ -865,7 +865,7 @@ Media Queries
     margin: 0 auto;
   }
 
-  /* Hero */
+  /* Blog hero */
   .hero {
     margin: 0 20%;
   }
