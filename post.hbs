@@ -8,22 +8,22 @@
 
 {{#post}}
   <article class="{{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
-    <header class="postHeader">
-      <h1 class="postTitle" itemprop="headline">{{title}}</h1>
-      <p class="postMeta">
-        by {{#author}}<a href="{{website}}">{{name}}</a>{{/author}} on <time class="postDate" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="headline">{{title}}</h1>
+      <p class="post-meta">
+        by {{#author}}<a href="{{website}}">{{name}}</a>{{/author}} on <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
         {{!tags prefix=" on "}}
       </p>
     </header>
 
-    <section class="sectionContent" itemprop="articleBody">
+    <section class="section-content" itemprop="article-body">
       {{content}}
     </section>
 
     {{#if tags}}
     {{!--
     <hr>
-    <div class="postTags">
+    <div class="post-tags">
       Tags: {{tags separator=" | "}}
     </div>
     <hr>
@@ -31,29 +31,29 @@
     {{/if}}
 
     {{#if author}}
-    <footer class="postFooter">
+    <footer class="post-footer">
       <!--
       <em>Written by</em>
       <address itemscope itemtype="http://schema.org/Person">
         {{#if author.image}}
-        <figure class="authorImage">
+        <figure class="author-image">
           <a class="img" href="{{url}}" style="background-image: url({{image}})">
-            <img src="{{author.image}}" itemprop="image" />
+            <img src="{{author.image}}" itemprop="image">
             <span class="hidden">{{author.name}}'s Picture</span>
           </a>
         </figure>
         {{/if}}
 
-        <h4 class="authorName">
+        <h4 class="author-name">
           <span itemprop="author">{{author.name}}</span>
         </h4>
 
         {{#if author.website}}
-        <div class="authorWebsite"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
+        <div class="author-website"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
         {{/if}}
       </address>
 
-      <div class="authorBio">
+      <div class="author-bio">
         <p>{{author.bio}}</p>
       </div>
       -->
@@ -62,7 +62,7 @@
 
     <hr>
 
-    <div class="sharePost">
+    <div class="share-post">
       <h4 class="share">Share this post</h4>
       <a class="share icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" title="Share this post on Twitter">
         {{!-- <span class="hideThis">Twitter</span> --}}
